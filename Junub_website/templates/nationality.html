@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nationality</title>
+    <link rel="stylesheet" href="../static/nationality.css" />
+  </head>
+  <body>
+    <form id="nationalityForm" action="/nationality">
+      <h2>Application for the National ID</h2>
+      <label for="surname">Surname:</label><br />
+      <input type="text" id="surname" name="surname" /><br />
+      <label for="givenName">Given name:</label><br />
+      <input type="text" id="givenName" name="givenName" /><br />
+      <label for="sex">Sex:</label><br />
+      <select id="sex" name="sex">
+        <option value=""></option>
+        <option value="male">Male</option>
+        <option value="female">Female</option></select
+      ><br />
+      <label for="motherName">Mother's name:</label><br />
+      <input type="text" id="motherName" name="motherName" /><br />
+      <label for="dateOfBirth">Date of birth:</label><br />
+      <input type="date" id="dateOfBirth" name="dateOfBirth" /><br />
+      <label for="placeOfBirth">Place of birth:</label><br />
+      <input type="text" id="placeOfBirth" name="placeOfBirth" /><br />
+      <label for="typeOfNC">Type of NC:</label><br />
+      <select id="typeOfNC" name="typeOfNC">
+        <option value="ordinary"></option>
+        <option value="diplomatic">By birth</option>
+        <option value="official">By Registration</option></select
+      ><br />
+      <label for="birthCertificate">Upload birthCertificate:</label><br />
+      <input
+        type="file"
+        id="birthCertificate"
+        name="birthCertificate"
+        accept=".png"
+      /><br />
+      <label for="passportsize photo">Upload passport Size photo:</label><br />
+      <input
+        type="file"
+        id="Passportsize"
+        name="Passportsize"
+        accept=".png"
+      /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

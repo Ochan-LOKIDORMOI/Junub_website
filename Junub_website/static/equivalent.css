@@ -1,0 +1,92 @@
+/* equivalent.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+  }
+  
+  #equivalentform {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  fieldset {
+    border: 1px solid hsl(206, 91%, 59%);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    color: black;
+    font-size: 30px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: hsl(241, 93%, 53%);
+  }
+
+  /* equivalent.css */
+
+#notarizedCertificate {
+    margin-top: 15px;
+  }
+  
+  #notarizedCertificate label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+    
+  }
+  
+  #notarizedCertificate input[type="file"] {
+    width: calc(100% - 16px); /* Adjusting for padding */
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    size: 40px;
+  }
+  
+  

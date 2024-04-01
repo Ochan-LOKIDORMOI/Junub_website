@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application for Foreign Qualification Certificate</title>
+    <link rel="stylesheet" href="../static/equivalent.css" />
+  </head>
+  <body>
+    <form id="equivalentform" action = "/equivalent">
+      <h1>Application for Foreign Qualifications Certificate</h1>
+      <fieldset id="personalDetails">
+        <legend>Personal Details</legend>
+        <label for="surname">Surname:</label><br />
+        <input type="text" id="surname" name="surname" required /><br />
+        <label for="givenName">Given Name:</label><br />
+        <input type="text" id="givenName" name="givenName" required /><br />
+        <label for="nationality">Nationality:</label><br />
+        <select id="nationality" name="nationality">
+          <option value=""></option>
+          <option value="foreigner">Foreigner</option>
+          <option value="national">National</option></select
+        ><br />
+        <label for="identificationDocumentType"
+          >Identification Document Type:</label
+        ><br />
+        <select
+          id="identificationDocumentType"
+          name="identificationDocumentType"
+        >
+          <option value=""></option>
+          <option value="id">ID</option>
+          <option value="passport">Passport</option></select
+        ><br />
+        <label for="identificationDocumentNumber">Enter ID Number:</label><br />
+        <input
+          type="text"
+          id="identificationDocumentNumber"
+          name="identificationDocumentNumber"
+          required
+        /><br />
+      </fieldset>
+      <fieldset id="qualificationDetails">
+        <legend>Qualification Details</legend>
+        <label for="qualificationLevel">Level of Qualification:</label><br />
+        <select id="qualificationLevel" name="qualificationLevel">
+          <option value=""></option>
+          <option value="ordinary">Ordinary</option>
+          <option value="advanced">Advanced</option></select
+        ><br />
+        <label for="country">Country:</label><br />
+        <select id="country" name="country">
+          <option value=""></option>
+          <option value="southsudan">South Sudan</option>
+          <option value="uganda">Uganda</option></select
+        ><br />
+        <label for="issuingSchool">School of Issuance:</label><br />
+        <input
+          type="text"
+          id="issuingSchool"
+          name="issuingSchool"
+          required
+        /><br />
+        <label for="yearOfIssuance">Year of Issuance:</label><br />
+        <input
+          type="number"
+          id="yearOfIssuance"
+          name="yearOfIssuance"
+          min="1900"
+          max="2100"
+          required
+        /><br />
+      </fieldset>
+      <div id="notarizedCertificate">
+        <label for="notarizedUpload">Upload Notarized Certificate:</label><br />
+        <input
+          type="file"
+          id="notarizedUpload"
+          name="notarizedUpload"
+          accept="application/pdf"
+          required
+        /><br />
+      </div>
+      <div id="passport">
+        <label for="passportUpload"
+          >Upload Passport: <br>
+          <input
+            type="file"
+            id="passportUpload"
+            name="passportUpload"
+            accept="image/png, image/jpeg, image/gif"
+            class="upload-file"
+          />
+        </label>
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
