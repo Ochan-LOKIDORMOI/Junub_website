@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>birth certificate</title>
+    <link rel="stylesheet" href="../static/birth.css" />
+  </head>
+  <body>
+    {% with messages = get_flashed_messages() %} {% if messages %}
+    <ul>
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %} {% endwith %}
+    <form id="birthCertificateForm" action="/birth-certificate" method="POST">
+      <h2>Application for the Assessment of Age</h2>
+      <p>
+        This services will allow south sudanese to apply for their assessment of
+        age certificate
+      </p>
+      <label for="name">Name :</label><br />
+      <input type="text" id="name" name="name" /><br />
+      <label for="sex">Sex:</label><br />
+      <select id="sex" name="sex">
+        <option value=""></option>
+        <option value="male">Male</option>
+        <option value="female">Female</option></select
+      ><br />
+      <label for="placeOfBirth">Place of birth:</label><br />
+      <input type="text" id="placeOfBirth" name="placeOfBirth" /><br />
+      <label for="county">County:</label><br />
+      <input type="text" id="county" name="county" /><br />
+      <label for="state">State:</label><br />
+      <input type="text" id="state" name="state" /><br />
+      <label for="fatherName">Father's name:</label><br />
+      <input type="text" id="fatherName" name="fatherName" /><br />
+      <label for="motherName">Mother's name:</label><br />
+      <input type="text" id="motherName" name="motherName" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

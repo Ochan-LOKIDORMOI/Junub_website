@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Application for Certificate</title>
+  <link rel="stylesheet" href="../static/certificate.css">
+</head>
+<body>
+  <form id="certificateform" action = "/certificate">
+    <h1>Application for the Certificate</h1>
+    <label for="certificateType">Type of Certificate:</label><br>
+    <select id="certificateType" name="certificateType">
+        <option value=""></option>
+      <option value="secondary">Secondary School Certificate</option>
+      <option value="primary">Primary School Certificate</option>
+      <option value="vocational">Vocational Training Certificate</option>
+    </select><br>
+    <label for="indexNumber">Index Number:</label><br>
+    <input type="text" id="indexNumber" name="indexNumber" required><br>
+    <label for="surname">Surname:</label><br>
+    <input type="text" id="surname" name="surname" required><br>
+    <label for="givenNames">Given Names:</label><br>
+    <input type="text" id="givenNames" name="givenNames" required><br>
+    <label for="gender">Gender:</label><br>
+    <select id="gender" name="gender">
+      <option value=""></option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <!-- <option value="other">Other</option> -->
+    </select><br>
+    <label for="schoolName">Name of School:</label><br>
+    <input type="text" id="schoolName" name="schoolName" required><br>
+    <label for="centerNumber">Center Number:</label><br>
+    <input type="text" id="centerNumber" name="centerNumber" required><br>
+    <label for="dateOfEvent">Date of Exam:</label><br>
+    <input type="date" id="dateOfEvent" name="dateOfEvent" required><br>
+    <label for="placeOfEvent">Place of Exam (State):</label><br>
+    <input type="text" id="placeOfEvent" name="placeOfEvent" required><br>
+    <label for="idDocument">ID or Passport:</label><br>
+    <input type="file" id="idDocument" name="idDocument" accept="image/png, image/jpeg, image/gif" required><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
