@@ -12,23 +12,21 @@ header {
   padding: 0;
   margin: 0;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
+  position: inherit;
 
 }
 
 /* Navigation styling */
 nav {
   list-style-type: none;
-  /* background-color: black; */
   text-align: start;
-  padding: 20px;
-  margin: 30px;
   font-size: 30px;
   display: flex;
   justify-content: space-between; 
   list-style-type: none;
   margin: 0;
-  padding: 15px;
+  padding: 5px;
   overflow: hidden;
   background-color:  hsl(349, 67%, 59%);
   position: sticky;
@@ -52,18 +50,9 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li:not(.logo) {
-  margin-left: 10px; /* Adjust spacing between links */
-  font-size: 20px;
-}
-
-
 nav ul li a:hover {
   background-color: hwb(0 13% 86%);
-}
 
-main {
-  padding: 20px;
 }
 
 section {
@@ -71,13 +60,14 @@ section {
   border-radius: 5px;
   padding: 30px;
   margin: 4px;
-  margin-bottom: 20px;
+  margin-bottom: auto;
+  margin-top: 0;
   font-size: 25px;
 }
 
 section h2 {
   color: hwb(205 5% 32%);
-  font-weight: 200px;
+  font-weight: 150px;
 }
 
 section ul {
@@ -105,10 +95,9 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #333;
   color: white;
   text-align: start;
-  padding: 10px;
+  padding: 15px;
 }
 
 header form {
@@ -154,23 +143,8 @@ button[type="submit"]:hover {
   display: "";
 }
 
-
-/* styles.css */
-/* nav {
-  overflow: hidden;
-  background-color: black;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-} */
-
 nav ul {
   list-style-type: none;
-  /* margin: 0;
-  padding: 15px;
-  overflow: hidden;
-  background-color:  hsl(349, 67%, 59%); */
 }
 
 nav ul.log{
@@ -182,10 +156,6 @@ nav li {
   float: right; 
 }
 
-nav li.LOGOUT {
-  float: left;
-  color: #4caf50; 
-}
 
 nav li a {
   display: block;
@@ -193,10 +163,6 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
-nav li.LOGOUT a {
-  color: red; 
 }
 
 nav li a:hover {
