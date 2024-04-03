@@ -17,24 +17,32 @@ header {
 }
 
 /* Navigation styling */
-nav ul {
+nav {
   list-style-type: none;
-  background-color: black;
+  /* background-color: black; */
   text-align: start;
   padding: 20px;
   margin: 30px;
   font-size: 30px;
-  display: flex; /* Use flexbox */
-  justify-content: space-between; /* Align items in a row with space between */
+  display: flex;
+  justify-content: space-between; 
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  overflow: hidden;
+  background-color:  hsl(349, 67%, 59%);
+  position: sticky;
+  top: 0;
 }
 
 nav ul li {
   font-size: 20px;
 }
 
-nav ul li.logo img {
-  width: 100px;
-  height: auto;
+nav ul li.Logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 4rem;
 }
 
 nav ul li a {
@@ -148,21 +156,26 @@ button[type="submit"]:hover {
 
 
 /* styles.css */
-nav {
+/* nav {
   overflow: hidden;
   background-color: black;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
-}
+} */
 
 nav ul {
   list-style-type: none;
-  margin: 0;
+  /* margin: 0;
   padding: 15px;
   overflow: hidden;
-  background-color:  hsl(349, 67%, 59%);
+  background-color:  hsl(349, 67%, 59%); */
+}
+
+nav ul.log{
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 nav li {

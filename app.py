@@ -115,7 +115,7 @@ def birth_certificate():
         fatherName = request.form['fatherName']
         motherName = request.form['motherName']
 
-        userID = session['userID'][0]
+        userID = session['userID']
 
         cursor = db.cursor()
         sql = "INSERT INTO ageassessment (`userID`, `name`, sex, placeOfBirth, county, `state`, fatherName, motherName) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
