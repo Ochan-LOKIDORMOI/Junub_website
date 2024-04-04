@@ -1,55 +1,101 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1 {
-    text-align: center;
-    color: black;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+form {
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 40px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: black;
+  font-size: 30px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: hsl(252, 90%, 49%);
+}
+
+/* Media Queries for Different Screen Sizes */
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
   form {
-    max-width: 1000px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-size: 40px;
-  }
-  
-  label {
-    display: block;
-    margin-top: 10px;
-    color: black;
+    padding: 10px;
     font-size: 30px;
+    color: blue;
   }
-  
+
+  label {
+    font-size: 25px;
+  }
+
   input[type="text"],
   input[type="date"],
   select,
   input[type="file"] {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    font-size: 20px;
+    font-size: 18px;
   }
-  
-  input[type="submit"] {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 20px;
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  form {
+    padding: 15px;
+    font-size: 35px;
+    color: blue;
   }
-  
-  input[type="submit"]:hover {
-    background-color: hsl(252, 90%, 49%);
+
+  label {
+    font-size: 28px;
   }
+
+  input[type="text"],
+  input[type="date"],
+  select,
+  input[type="file"] {
+    font-size: 22px;
+  }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 1025px) {
   
+}

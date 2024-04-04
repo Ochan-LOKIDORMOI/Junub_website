@@ -1,52 +1,96 @@
 /* birth.css */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    font-size: 30px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
 }
 
 #birthCertificateForm {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-h2{
-    text-align: center;
+h2 {
+  text-align: center;
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 30px;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 30px;
 }
 
 input[type="text"],
 select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    font-size: 25px;
-    color: black;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  font-size: 25px;
+  color: black;
 }
 
 input[type="submit"] {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 input[type="submit"]:hover {
-    background-color: hsl(243, 89%, 44%);
+  background-color: hsl(243, 89%, 44%);
+}
+
+/* Media Queries for Different Screen Sizes */
+
+/* Smart phones devices (phones) */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 20px;
+    display: block;
+    color: blue;
+  }
+
+  #birthCertificateForm {
+    padding: 10px;
+  }
+
+  label {
+    font-size: 20px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 25px;
+  }
+
+  #birthCertificateForm {
+    padding: 15px;
+  }
+
+  label {
+    font-size: 25px;
+  }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 1025px) {
+  #birthCertificateForm {
+    padding: 20px;
+  }
+
+  label {
+    font-size: 30px;
+  }
 }
