@@ -27,11 +27,11 @@
     .Create a database and name it according to your choice.
 
 7.  **Modify the app.py file to match your MySQL database configuration:**
-    .db = mysql.connector.connect(
-    .host="localhost",
-    .user="your_mysql_username",
-    .password="your_mysql_password",
-    database="Your_database_name"
+    #db = mysql.connector.connect(
+    #host="localhost",
+    #user="your_mysql_username",
+    #password="your_mysql_password",
+    #database="Your_database_name"
     )
 
 **NB** Replace your_mysql_username and your_mysql_password with your MySQL username and password.
@@ -52,7 +52,7 @@
     .Avoid using sensitive information like passwords directly in code for production applications. Consider using environment variables or secure storage mechanisms.
 
 11. **Support**
-    .For any issues or inquiries, please contact 
+    .For any issues or inquiries, please contact
     Email: o.lokidormo@alustudent.com
     Contant: +211929333208
 
