@@ -27,6 +27,7 @@
     .Create a database and name it according to your choice.
 
 7.  **Modify the app.py file to match your MySQL database configuration:**
+
     #db = mysql.connector.connect(
     #host="localhost",
     #user="your_mysql_username",
