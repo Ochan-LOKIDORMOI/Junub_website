@@ -1,5 +1,5 @@
 1. **Project Setup Guide**
-   This guide will walk you through setting up and running the Flask project. Ensure you follow each step carefully to get the project running smoothly.
+   - This guide will walk you through setting up and running the Flask project. Ensure you follow each step carefully to get the project running smoothly.
 
 2. **Before you begin, make sure you have the following installed:**
    - Python (with pip)
