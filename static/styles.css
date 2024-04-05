@@ -28,7 +28,7 @@ nav {
   margin: 0;
   padding: 5px;
   overflow: hidden;
-  background-color: hsl(349, 67%, 59%);
+  background-color: hsl(349, 59%, 13%);
   position: sticky;
   top: 0;
 }
@@ -45,28 +45,28 @@ nav ul li.Logo img {
 
 nav ul li a {
   display: block;
-  padding: 10px 20px;
+  padding: 40px 30px;
   color: #fff;
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  background-color: hwb(0 13% 86%);
+  background-color: hwb(0 27% 59%);
 }
 
 section {
   background-color: white;
   border-radius: 5px;
-  padding: 30px;
+  padding: 0;
   margin: 4px;
   margin-bottom: auto;
   margin-top: 0;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 section h2 {
   color: hwb(205 5% 32%);
-  font-weight: 150px;
+  font-weight: 10px;
 }
 
 section ul {
@@ -74,8 +74,8 @@ section ul {
 }
 
 section ul li {
-  margin-bottom: 20px;
-  margin-top: 40px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 section ul li a {
@@ -135,17 +135,6 @@ button[type="submit"]:hover {
   background-color: blue;
 }
 
-#police {
-  display: "";
-}
-
-#identification {
-  display: "";
-}
-
-#education {
-  display: "";
-}
 
 nav ul {
   list-style-type: none;
