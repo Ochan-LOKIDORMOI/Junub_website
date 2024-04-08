@@ -1,101 +1,70 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+  background-color: #f2f2f2;
 }
 
-h1 {
-  text-align: center;
-  color: black;
-}
-
-form {
-  max-width: 1000px;
-  margin: 20px auto;
+#container {
+  max-width: 800px;
+  margin: 0 auto;
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 label {
+  font-weight: bold;
   display: block;
-  margin-top: 10px;
-  color: black;
-  font-size: 30px;
+  margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="date"],
 select,
 input[type="file"] {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-  font-size: 20px;
+  width: calc(100% - 22px); /* Adjusting for border and padding */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 input[type="submit"] {
-  background-color: #4caf50;
-  color: #fff;
-  padding: 10px 15px;
+  width: 100%;
+  padding: 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
   cursor: pointer;
-  font-size: 20px;
 }
 
 input[type="submit"]:hover {
-  background-color: hsl(252, 90%, 49%);
+  background-color: #0056b3;
 }
 
-/* Media Queries for Different Screen Sizes */
-
-/* Small devices (phones) */
-@media only screen and (max-width: 600px) {
-  form {
-    padding: 10px;
-    font-size: 30px;
-    color: blue;
-  }
-
-  label {
-    font-size: 25px;
+/* Responsive design */
+@media (max-width: 600px) {
+  #container {
+    padding: 20px;
   }
 
   input[type="text"],
   input[type="date"],
   select,
   input[type="file"] {
-    font-size: 18px;
+    width: 100%;
   }
-}
-
-/* Medium devices (tablets) */
-@media only screen and (min-width: 501px) and (max-width: 1024px) {
-  form {
-    padding: 15px;
-    font-size: 35px;
-    color: blue;
-  }
-
-  label {
-    font-size: 28px;
-  }
-
-  input[type="text"],
-  input[type="date"],
-  select,
-  input[type="file"] {
-    font-size: 22px;
-  }
-}
-
-/* Large devices (desktops) */
-@media only screen and (min-width: 1025px) {
-  
 }

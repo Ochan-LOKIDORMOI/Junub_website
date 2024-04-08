@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Application for National ID Correction</title>
-  <link rel="stylesheet" href="../static/correction.css">
-</head>
-<body>
-  <div class="container" action = "/correction">
-    <h1>Application for the National ID Correction</h1>
-    <form id="nationalityIDCorrectionForm">
-      <label for="surname">Surname:</label><br>
-      <input type="text" id="surname" name="surname"><br>
-      <label for="givenName">Given name:</label><br>
-      <input type="text" id="givenName" name="givenName"><br>
-      <label for="sex">Sex:</label><br>
-      <select id="sex" name="sex">
-        <option value=""></option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-      </select><br>
-      <label for="dateOfBirth">Date of birth:</label><br>
-      <input type="date" id="dateOfBirth" name="dateOfBirth"><br>
-      <label for="placeOfBirth">Place of birth:</label><br>
-      <input type="text" id="placeOfBirth" name="placeOfBirth"><br>
-      <label for="nationalityID">National ID number:</label><br>
-      <input type="text" id="nationalityID" name="nationalityID"><br>
-      <label for="correctionType">Type of correction:</label><br>
-      <select id="correctionType" name="correctionType">
-        <option value=""></option>
-        <option value="surname">Surname</option>
-        <option value="givenName">Given name</option>
-        <option value="sex">Sex</option>
-        <option value="dateOfBirth">Date of birth</option>
-        <option value="placeOfBirth">Place of birth</option>
-        <option value="nationalityID">National ID number</option>
-      </select><br>
-      <label for="correctionReason">Reason for correction:</label><br>
-      <textarea id="correctionReason" name="correctionReason" rows="4" cols="50"></textarea><br>
-      <input type="submit" value="Submit">
-    </form>
-  </div>
-</body>
+  <head>
+    <title>Application for National ID Correction</title>
+    <link rel="stylesheet" href="../static/correction.css" />
+  </head>
+  <body>
+    <div class="container" action="/correction">
+      <h1>Application for the National ID Correction</h1>
+      <p>
+        This services allows South Sudanese to correct errors in their national
+        identity card
+      </p>
+      <p />
+      <form id="nationalityIDCorrectionForm">
+        <label for="surname">Surname:</label><br />
+        <input type="text" id="surname" name="surname" /><br />
+        <label for="givenName">Given name:</label><br />
+        <input type="text" id="givenName" name="givenName" /><br />
+        <label for="sex">Sex:</label><br />
+        <select id="sex" name="sex">
+          <option value=""></option>
+          <option value="male">Male</option>
+          <option value="female">Female</option></select
+        ><br />
+        <label for="dateOfBirth">Date of birth:</label><br />
+        <input type="date" id="dateOfBirth" name="dateOfBirth" /><br />
+        <label for="placeOfBirth">Place of birth:</label><br />
+        <input type="text" id="placeOfBirth" name="placeOfBirth" /><br />
+        <label for="nationalityID">National ID number:</label><br />
+        <input type="text" id="nationalityID" name="nationalityID" /><br />
+        <label for="correctionType">Type of correction:</label><br />
+        <select id="correctionType" name="correctionType">
+          <option value=""></option>
+          <option value="surname">Surname</option>
+          <option value="givenName">Given name</option>
+          <option value="sex">Sex</option>
+          <option value="dateOfBirth">Date of birth</option>
+          <option value="placeOfBirth">Place of birth</option>
+          <option value="nationalityID">National ID number</option></select
+        ><br />
+        <label for="correctionReason">Reason for correction:</label><br />
+        <textarea
+          id="correctionReason"
+          name="correctionReason"
+          rows="4"
+          cols="50"
+        ></textarea
+        ><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
 </html>

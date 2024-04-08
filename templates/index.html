@@ -9,8 +9,8 @@
   <body>
     <nav>
       <ul class="log">
-        <li class="Logo"><img src="../static/junub.png" alt="#" /></li>
         <li><a href="/logout">Logout</a></li>
+        <li class="Logo"><img src="../static/junub.png" alt="#" /></li>
       </ul>
       <ul class="menu">
         <li><a href="#header">Identification</a></li>
@@ -19,7 +19,7 @@
       </ul>
     </nav>
     <header id="header">
-      <h1>Welcome to JUNUB Online Government Services: {{ username }}</h1>
+      <h1>Welcome to JUNUB Online Government Services, {{ username }}</h1>
       <form action="" method="get">
         <input
           type="text"
@@ -31,53 +31,48 @@
         <div class="results"></div>
       </form>
     </header>
-    <main>
-      <section id="identification" class="op">
+    <main class="main-page">
+      <div id="identification" class="identity">
         <h2>Identification</h2>
         <ul>
           <li>
-            <a href="/birth-certificate"
-              >Application for Age Assessment Certificate</a
-            >
+            <a href="/birth-certificate">Application Birth Certificate</a>
           </li>
           <li>
-            <a href="/nationality"
-              >Application for South Sudanese National ID</a
-            >
+            <a href="/nationality">Application for nationality</a>
           </li>
           <li>
-            <a href="/correction">Application for National ID Correction</a>
+            <a href="/correction">Nationality Correction</a>
           </li>
         </ul>
-      </section>
-      <section id="police" class="op">
+      </div>
+      <div id="police" class="operation">
         <h2>Police</h2>
         <ul>
           <li>
             <a href="/driving_test">Registration for Driving Test</a>
           </li>
           <li>
-            <a href="/exam_result">Driving License Exam Results</a>
+            <a href="/exam_result">Request for Driving test Results</a>
           </li>
           <li>
-            <a href="/apply-license">Application for Driving License</a>
+            <a href="/apply-license">Apply for Driving License</a>
           </li>
         </ul>
-      </section>
-      <section id="education" class="op">
+      </div>
+      <div id="education" class="edu">
         <h2>Education</h2>
         <ul>
           <li>
-            <a href="/certificate">Application for the Certificate</a>
+            <a href="/certificate">Apply for the Certificate</a>
           </li>
           <li>
-            <a href="/equivalent"
-              >Application for the foriegn Qualification Certificate</a
-            >
+            <a href="/equivalent">Foreign Qualification Certificate</a>
           </li>
         </ul>
-      </section>
+      </div>
     </main>
+
     <footer>
       <p>&copy; 2024 Online Government Services. All rights reserved.</p>
     </footer>

@@ -1,47 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Application for Driving License</title>
-  <link rel="stylesheet" href="../static/apply-license.css">
-</head>
-<body>
-  <form id = "container" action = "/apply-license">
-    <h2>Application for the Driving License</h2>
-    <label for="fullName">Full Name:</label><br>
-    <input type="text" id="fullName" name="fullName"><br>
-    <label for="dateOfBirth">Date of Birth:</label><br>
-    <input type="date" id="dateOfBirth" name="dateOfBirth"><br>
-    <label for="placeOfBirth">Place of Birth:</label><br>
-    <input type="text" id="placeOfBirth" name="placeOfBirth"><br>
-    <label for="gender">Gender:</label><br>
-    <select id="gender" name="gender">
-      <option value=""></option>
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-    </select><br>
-    <label for="address">Address:</label><br>
-    <input type="text" id="address" name="address"><br>
-    <label for="county">County:</label><br>
-    <input type="text" id="county" name="county"><br>
-    <label for="state">State:</label><br>
-    <input type="text" id="state" name="state"><br>
-    <label for="fatherName">Father's Name:</label><br>
-    <input type="text" id="fatherName" name="fatherName"><br>
-    <label for="motherName">Mother's Name:</label><br>
-    <input type="text" id="motherName" name="motherName"><br>
-    <label for="drivingTestType">Type of Driving Test:</label><br>
-    <select id="drivingTestType" name="drivingTestType">
-      <option value=""></option>
-      <option value="written">Written Test</option>
-      <option value="driving">Driving Test</option>
-    </select><br>
-    <label for="drivingTestResult">Driving Test Result:</label><br>
-    <input type="file" id="drivingTestResult" name="drivingTestResult" accept="application/pdf"><br>
-    <label for="certificate">Driving Certificate:</label><br>
-    <input type="file" id="certificate" name="certificate" accept="application/pdf"><br>
-    <label for="idDocument">ID or Passport:</label><br>
-    <input type="file" id="idDocument" name="idDocument" accept="image/png, image/jpeg, image/gif" required><br>
-    <input type="submit" value="Submit">
-  </form>
-</body>
+  <head>
+    <title>Application for Driving License</title>
+    <link rel="stylesheet" href="../static/apply-license.css" />
+  </head>
+  <body>
+    <form id="container" action="/apply-license">
+      <h2>Application for the Driving License</h2>
+      <p>This services allow south sudanese to apply for the driving license</p>
+      <p />
+      <label for="fullName">Full Name:</label><br />
+      <input type="text" id="fullName" name="fullName" /><br />
+      <label for="dateOfBirth">Date of Birth:</label><br />
+      <input type="date" id="dateOfBirth" name="dateOfBirth" /><br />
+      <label for="placeOfBirth">Place of Birth:</label><br />
+      <input type="text" id="placeOfBirth" name="placeOfBirth" /><br />
+      <label for="gender">Gender:</label><br />
+      <select id="gender" name="gender">
+        <option value=""></option>
+        <option value="male">Male</option>
+        <option value="female">Female</option></select
+      ><br />
+      <label for="address">Address:</label><br />
+      <input type="text" id="address" name="address" /><br />
+      <label for="county">County:</label><br />
+      <input type="text" id="county" name="county" /><br />
+      <label for="state">State:</label><br />
+      <input type="text" id="state" name="state" /><br />
+      <label for="fatherName">Father's Name:</label><br />
+      <input type="text" id="fatherName" name="fatherName" /><br />
+      <label for="motherName">Mother's Name:</label><br />
+      <input type="text" id="motherName" name="motherName" /><br />
+      <label for="drivingTestType">Type of Driving Test:</label><br />
+      <select id="drivingTestType" name="drivingTestType">
+        <option value=""></option>
+        <option value="written">Written Test</option>
+        <option value="driving">Driving Test</option></select
+      ><br />
+      <label for="drivingTestResult">Driving Test Result:</label><br />
+      <input
+        type="file"
+        id="drivingTestResult"
+        name="drivingTestResult"
+        accept="application/pdf"
+      /><br />
+      <label for="certificate">Driving Certificate:</label><br />
+      <input
+        type="file"
+        id="certificate"
+        name="certificate"
+        accept="application/pdf"
+      /><br />
+      <label for="idDocument">ID or Passport:</label><br />
+      <input
+        type="file"
+        id="idDocument"
+        name="idDocument"
+        accept="image/png, image/jpeg, image/gif"
+        required
+      /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
 </html>
