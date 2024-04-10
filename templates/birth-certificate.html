@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="../static/birth.css" />
   </head>
   <body>
-    {% with messages = get_flashed_messages() %} {% if messages %}
-    <ul>
-      {% for message in messages %}
-      <li>{{ message }}</li>
-      {% endfor %}
-    </ul>
-    {% endif %} {% endwith %}
     <form id="birthCertificateForm" action="/birth-certificate" method="POST">
       <h2>Application for the Assessment of Age</h2>
+      {% with messages = get_flashed_messages() %} {% if messages %}
+      <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %} {% endwith %}
       <p>
         This services will allow a south sudanese to apply for the assessment of
         age certificate

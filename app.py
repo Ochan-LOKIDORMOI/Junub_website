@@ -1,15 +1,33 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 import mysql.connector
+from urllib.parse import urlparse
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 app.secret_key = 'junub'
+db_url = "mysql://ajcwflb3am0i19fl:vj3ghtl610pc7h4g@jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mqv82ili5x6byx5i"
 
+parsed_url = urlparse(db_url)
+db_user = parsed_url.username
+db_password = parsed_url.password
+db_host = parsed_url.hostname
+db_name = parsed_url.path[1:]
+
+# Database connection
+db = mysql.connector.connect(
+    host=db_host,
+    user=db_user,
+    password=db_password,
+    database=db_name
+)
+
+"""
 db = mysql.connector.connect(
     host="localhost",
     user="root",
     password="Lokidormoi@1998",
     database="eddydb"
 )
+"""
 
 
 @app.route('/')
@@ -55,7 +73,7 @@ def register():
             return redirect(url_for('register'))
 
         cursor = db.cursor()
-        sql = "INSERT INTO User (name, email, Password) VALUES (%s, %s, %s)"
+        sql = "INSERT INTO user (name, email, Password) VALUES (%s, %s, %s)"
         cursor.execute(sql, (username, email, password))
         db.commit()
         cursor.close()
@@ -124,8 +142,13 @@ def birth_certificate():
         db.commit()
         cursor.close()
         flash("Birth Certificate created successfully")
-        return redirect(url_for('birth_certificate'))
+        return redirect(url_for('payment'))
     return render_template('birth-certificate.html')
+
+
+@app.route('/payment')
+def payment():
+    return render_template('payment.html')
 
 
 @app.route('/nationality', methods=['POST', 'GET'])
